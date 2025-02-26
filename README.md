@@ -6,7 +6,7 @@
 
 🌸 This code draws on the code of [https://github.com/ljy0ustc](https://github.com/ljy0ustc), including the implementation of LLaRA (Liao et al. 2024). Thanks for their code.
 
-![](f01.pdf)
+![](f01.jpg)
 
 ### Preparation
 

@@ -1,0 +1,21 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+--lora_r 8 \
+--mode test \
+--batch_size 4 \
+--accumulate_grad_batches 32 \
+--dataset movielens_data \
+--data_dir data/ref/movielens \
+--cans_num 20 \
+--prompt_path ./prompt/movie.txt \
+--rec_embed SASRec \
+--llm_tuning lora \
+--llm_path xxx \
+--rec_model_path ./rec_model/movielens.pt \
+--ckpt_path ./checkpoints/movie.ckpt \
+--output_dir ./output/movielens/ \
+--log_dir movielens_logs \
+--lr_warmup_start_lr 2e-6 \
+--lr 2e-4 \
+--lr_decay_min_lr 2e-6 \
+--max_epochs 5
+

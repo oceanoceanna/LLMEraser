@@ -1,0 +1,27 @@
+
+CUDA_VISIBLE_DEVICES=2 python attack_demo.py \
+--lora_r 8 \
+--mode train \
+--mode_type attack \
+--batch_size 4 \
+--accumulate_grad_batches 32 \
+--dataset movielens_data \
+--data_dir data/ref/movielens \
+--cans_num 20 \
+--prompt_path ./prompt/movie.txt \
+--rec_embed SASRec \
+--llm_tuning lora \
+--llm_path xxx \
+--rec_model_path ./rec_model/movielens.pt \
+--ckpt_path ./checkpoints/movie_corrupted.ckpt \
+--output_dir ./output/movielens/ \
+--log_dir movielens_logs \
+--lr_warmup_start_lr 2e-6 \
+--lr 2e-4 \
+--lr_decay_min_lr 2e-6 \
+--ratio 0.10 \
+--max_epochs 5 \
+--x_lr 0.00001 \
+--x_init 0.00001 \
+--x_adjust 0.00001 \
+--max_epochs 5

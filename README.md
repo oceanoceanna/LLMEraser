@@ -39,7 +39,7 @@ Using influence function to calculate the parameter changes with a single A100 G
 sh test_attack_movielens.sh
 ```
 
-Note that: set the `llm_path` argument with your own directory path of the Llama2 model; set the correct ckpt_path.
+Note that: set the `llm_path` argument with your own directory path of the Llama2 model; set the correct `ckpt_path`.
 
 ### Hyperparameters
 

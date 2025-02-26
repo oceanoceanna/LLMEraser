@@ -22,7 +22,7 @@
 
 3. Download the data and checkpoints.
 
-4. Prepare the data and checkpoints:
+4. Prepare the [data](https://huggingface.co/datasets/ocean123123/LLMEraser) and [checkpoints](https://huggingface.co/ocean123123/LLMEraser):
 
    Put the data to the dir path `data/ref/` and the checkpoints to the dir path `checkpoints/`. We provide the clean and noisy data and the corresponding checkpoints on [Movielens](https://github.com/ljy0ustc) dataset.
    
